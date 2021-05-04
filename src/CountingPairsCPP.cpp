@@ -9,12 +9,12 @@ unsigned int find_pairs(int arr[], int arr_size, int sum);	//finds the number of
 void print_array(int arr[], int arr_size);					//prints an array out
 
 int main() {
-	const int num_array_size = 5;														//there are 5 elements in the array
-	int num_array[num_array_size] = {3, 4, 8, 12, 0};									//the elements that will be compared together
+	const int num_array_size = 5;								//there are 5 elements in the array
+	int num_array[num_array_size] = {3, 4, 8, 12, 0};					//the elements that will be compared together
 	cout << "The array is: ";
-	print_array(num_array, num_array_size);												//print out the array's values
+	print_array(num_array, num_array_size);							//print out the array's values
 	cout << "The number of pairs is: " << find_pairs(num_array, num_array_size, 12);	//find the pairs
-	return 0;																			//quit
+	return 0;										//quit
 }
 
 unsigned int find_pairs(int arr[], int arr_size, int sum){
